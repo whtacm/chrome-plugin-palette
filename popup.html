@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Popup</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :focus{
+            outline: none;
+        }
+
+        body {
+            overflow: hidden;
+            margin: 0px;
+            padding: 1.5rem;
+            width: 15rem;
+            background: white;
+        }
+        input[type="checkbox" i] {
+            background-color: rgba(115, 213, 213, 1);
+        }
+        .borderless {
+            border: none;
+        }
+
+        button {
+            width: 100%;
+            /*padding: .5rem;*/
+            border-radius: .4rem;
+            font-size: .75rem;
+            background: white;
+            height: 1.6rem;
+            cursor: pointer;
+        }
+
+        .blue-button {
+            color: white;
+            background: linear-gradient(90deg, rgba(115, 213, 213, 1) 0%, rgba(27, 170, 170, 1) 100%);
+            border-radius: 0.9rem;
+        }
+
+        .gray-button {
+            color: white;
+            background: linear-gradient(90deg, rgb(212, 212, 210) 0%, rgb(76, 77, 77) 100%);
+            border-radius: 0.9rem;
+        }
+
+        .flex-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .small-font {
+            font-size: .75rem;
+        }
+        .gray-color {
+            color: #333;
+        }
+
+        .blue-color {
+            color: #333;
+        }
+
+        .margin-t1{
+            margin-top: 1rem;
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+
+    <div class="flex-box">
+        <span class="small-font gray-color">Auto switch</span>
+        <input type="checkbox" checked/>
+    </div>
+    <button id="change" class="borderless margin-t1 blue-button">Change page</button>
+    <button id="clear" class="borderless margin-t1 blue-button">Clear effect</button>
+    <button id="add" class="borderless margin-t1 blue-button">Add this website</button>
+    <button id="add" class="borderless margin-t1 gray-button">Remove this website</button>
+</body>
+
+</html>
